@@ -6,11 +6,11 @@ import json
 import http.client
 
 # GPT-4 Turbo API key (from RapidAPI)
-rapidapi_key = 'bb2fe6bbcbmsh22d6e5c6ebf0387p17a611jsn0466f711ebcf'
+rapidapi_key = ''
 
 # Function to fetch movie details (poster, overview, release date, rating)
 def fetch_movie_details(movie_id):
-    api_key = 'd1aa405518bcd86047c245cdc2bfe4e5'
+    api_key = ''
     try:
         response = requests.get(f'https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}')
         response.raise_for_status()  # Raises an HTTPError for bad responses (4xx/5xx)
